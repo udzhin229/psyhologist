@@ -1,0 +1,145 @@
+section {
+    padding: 175px 0 200px;
+}
+section .section__inner {
+    display: flex;
+    justify-content: space-between;
+}
+section .section__inner .left {
+    width: 950px;
+    padding: 33px 54px 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.09);
+    border-radius: 21px;
+}
+section .section__inner .left .title {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+section .section__inner .left .online {
+    margin: 25px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: #E6F5EE;
+    border-radius: 25px;
+    padding: 21px 0;
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #29B981;
+}
+section .section__inner .left .price_min {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(51, 51, 51, 0.7);
+}
+section .section__inner .left .price_min > #price {
+    font-size: 24px;
+    line-height: 29px;
+}
+section .section__inner .left .calendar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    margin: 30px 0 40px;
+}
+section .section__inner .left .calendar .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .section__inner .left .calendar .header #month {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+section .section__inner .left .calendar .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
+}
+section .section__inner .left .calendar .days .day {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(51, 51, 51, 0.4);
+}
+section .section__inner .left .calendar .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
+    row-gap: 18px;
+}
+section .section__inner .left .calendar .dates .date {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    display: grid;
+    place-items: center;
+}
+section .section__inner .left .calendar .dates .date.active {
+    cursor: pointer;
+}
+section .section__inner .left .calendar .dates .date.today {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #29B981;
+}
+section .section__inner .left .calendar .dates .date.not-now {
+    color: rgba(51, 51, 51, 0.16);
+}
+section .section__inner .left .time {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+section .section__inner .left .time_blocks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+section .section__inner .left .time_blocks .block {
+    padding: 15px 33px;
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    background: rgba(51, 51, 51, 0.05);
+    border-radius: 17px;
+}
+section .section__inner .left .time_blocks .block.active {
+    background: #E6F5EE;
+}

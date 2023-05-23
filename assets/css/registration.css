@@ -1,0 +1,171 @@
+section {
+    padding: 145px 0 100px;
+}
+.section__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section__inner .title-text {
+    text-decoration: none;
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}
+.section__inner .up {
+    width: 100%;
+    max-width: 995px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.section__inner .up .line {
+    position: relative;
+    width: 100%;
+}
+.section__inner .up .line hr {
+    margin: 0;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.section__inner .up .line .green-line {
+    display: block;
+    position: absolute;
+    width: 124px;
+    height: 6px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #B1DDCF;
+    border-radius: 30px;
+}
+.section__inner form {
+    padding-top: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 536px;
+}
+.section__inner form .title {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #333333;
+}
+.section__inner form .d-title {
+    padding: 20px 0 10px;
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    opacity: 0.7;
+}
+.section__inner form .ttl {
+    align-self: flex-start;
+    padding-left: 15px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+    margin: 30px 0 12px;
+}
+.section__inner form .choose {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.section__inner form .choose div {
+    border: 2px solid #E6F5EE;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 230px;
+    padding: 23px 0;
+    background: transparent;
+    border-radius: 17px;
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    text-align: center;
+}
+.section__inner form .choose div.active {
+    background: #E6F5EE;
+    border: none;
+}
+.section__inner form #mess {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ff4444;
+    align-self: flex-start;
+}
+.section__inner form input:not(input[type=submit], input[type=checkbox]) {
+    width: 100%;
+    padding: 24px 0 24px 23px;
+    background: transparent;
+    border: 2px solid rgba(51, 51, 51, 0.15);
+    border-radius: 17px;
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+.section__inner form input:not(input[type=submit])::placeholder {
+    opacity: .5;
+}
+.section__inner form .remember {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 10px;
+}
+.section__inner form .remember input[type=checkbox] {
+    width: 21px;
+    height: 21px;
+    border: 2px solid rgba(51, 51, 51, 0.19);
+    border-radius: 5px;
+}
+.section__inner form .remember label {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+.section__inner form input[type=submit] {
+    margin: 60px 0 20px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 20px 0;
+    width: 100%;
+    background: #E6F5EE;
+    border-radius: 17px;
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+}

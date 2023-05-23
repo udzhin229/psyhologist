@@ -1,0 +1,227 @@
+section {
+    display: flex;
+    align-items: start;
+    gap: 28px;
+    padding: 175px 0 75px;
+}
+.chats, .chat {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.06);
+    border-radius: 11px;
+    width: 100%;
+    height: 1220px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+.chats {
+    max-width: 560px;
+}
+.chats .title {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.56162px;
+    color: rgba(51, 51, 51, 0.5);
+    padding: 22px 28px;
+}
+.chats hr {
+    width: 100%;
+    background: rgba(80, 81, 81, 0.15);
+    height: 1.7px;
+    border: none;
+    margin: 0;
+}
+.chats .users {
+    padding: 22px 14px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.chats .users .user {
+    cursor: pointer;
+    width: 100%;
+    padding: 11px;
+    display: flex;
+    align-items: stretch;
+    gap: 14px;
+}
+.chats .users .user.active, .chats .users .user:hover {
+    background: rgba(51, 51, 51, 0.05);
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+.chats .users .user .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.chats .users .user .img img {
+    width: 100%;
+}
+.chats .users .user .info_user {
+    width: 100%;
+    max-width: 443px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chats .users .user .info_user .line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.chats .users .user .info_user .line .name {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 150%;
+    color: #333333;
+}
+.chats .users .user .info_user .line .message {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(51, 51, 51, 0.4);
+}
+.chats .users .user .info_user .line .time {
+    align-self: flex-end;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #333333;
+    opacity: 0.3;
+}
+.chat {
+    padding: 28px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+.chat .messages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+}
+.chat .messages .message {
+    width: 100%;
+    padding: 14px 19px;
+    display: flex;
+    align-items: center;
+}
+.chat .messages .message.own {
+    background: rgba(51, 51, 51, 0.05);
+}
+.chat .messages .message .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.chat .messages .message .img img {
+    width: 100%;
+}
+.chat .messages .message hr {
+    margin: 0 11px 0 28px;
+    background: #3333330d;;
+    border: none;
+    width: 3px;
+    height: 112px;
+}
+.chat .messages .message.own hr {
+    background: #5B82ED;
+}
+.chat .messages .message .info_user {
+    width: 100%;
+    max-width: 700px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+.chat .messages .message .info_user .name {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+.chat .messages .message .info_user .text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    margin: 14px 0 10px;
+}
+.chat .messages .message .info_user .date {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+.chat .send {
+    padding: 0 28px;
+}
+.chat .send form {
+    width: 100%;
+    padding: 15px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 11.2324px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chat .send form input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+}
+.chat .send form button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    display: grid;
+    place-items: center;
+}

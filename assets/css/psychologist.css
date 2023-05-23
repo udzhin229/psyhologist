@@ -1,0 +1,217 @@
+section {
+    padding: 175px 0 100px;
+}
+section .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .head .title {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+section .head .like {
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #E6E6E5;
+    background-image: url('/assets/images/heart.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+}
+section .head .like.active {
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #C13E18;
+    background-image: url('/assets/images/heart.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: fill;
+}
+section .blocks {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+}
+section .blocks .block {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.06);
+    border-radius: 2px;
+    padding: 22px 35px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .blocks .block .mark {
+    align-self: flex-end;
+    display: flex;
+    gap: 5px;
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+}
+section .blocks .block .photo_like {
+    margin: 15px 0 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+section .blocks .block .photo_like .ava {
+    width: 161px;
+    height: 161px;
+    background: #333333;
+    border-radius: 50%;
+}
+section .blocks .block .photo_like .like-fill {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 28.6px;
+    height: 23px;
+    background: url('/assets/images/like.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+section .blocks .block .photo_like .like-fill:hover {
+    background: url('/assets/images/like-fill.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+section .blocks .block .photo_like .like-fill.active {
+    background: url('/assets/images/like-fill.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: like .4s ease-in-out;
+    -webkit-animation: like .4s ease-in-out;
+}
+@keyframes like {
+0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+50% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+}
+section .blocks .block .name {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+section .blocks .block .who {
+    margin: 5px 0 10px;
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(51, 51, 51, 0.8);
+}
+section .blocks .block .practice {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+section .blocks .block .practice .point {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(51, 51, 51, 0.7);
+}
+section .blocks .block .practice .exp {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(51, 51, 51, 0.7);
+}
+section .blocks .block hr {
+    margin: 15px 0;
+    border: none;
+    width: 274px;
+    height: 1px;
+    background: rgba(51, 51, 51, 0.15);
+}
+section .blocks .block .desc {
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    max-height: 115px;
+    overflow: hidden;
+    color: rgba(51, 51, 51, 0.7);
+}
+section .blocks .block .price_per_min {
+    margin: 20px 0;
+    align-self: flex-start;
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+section .blocks .block .price_per_min span {
+    font-size: 24px;
+    line-height: 28px;
+}
+section .blocks .block a.button {
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 57px;
+    border-radius: 7px;
+    font-family: var(--font-gilr);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    background: #E6F5EE;
+    border: none;
+    margin: 0 0 10px 0;
+}
+section .blocks .block a.button:last-child {
+    margin: 0;
+    background: transparent;
+    border: 2px solid #A5D5C7;
+}
